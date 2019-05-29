@@ -3,6 +3,10 @@ package com.itacademy.enumy;
 import java.util.*;
 import org.apache.commons.lang3.*;
 
+//javaDoc generator, extra  javadoc options
+//-encoding UTF-8 -charset UTF-8 -docencoding UTF-8
+
+
 public enum DayOfWeek {
 	MONDAY("Poniedziałek", false), 
 	TUESDAY("Wtorek", false), 
@@ -15,7 +19,7 @@ public enum DayOfWeek {
     /**
      * <p>Returns polish name of given enum instance.</p>
      *
-     * <p>Polish letters are used in names.</p>
+     * <p>Polish letters (ĄĆĘŁŃÓŚŻąćęłńóśż) are used in names.</p>
      *
      * @return Polish name for enum
      * @since 1.0
@@ -65,7 +69,7 @@ public enum DayOfWeek {
     /**
      * <p>Returns enum instance by polish name.</p>
      *
-     * <p>Polish letters are used in names.</p>
+     * <p>Polish letters (ĄĆĘŁŃÓŚŻąćęłńóśż) are used in names.</p>
      *
      * @param polishName the String of polish name
      * @return enum instance if the name matches, otherwise {@code null}

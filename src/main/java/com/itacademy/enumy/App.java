@@ -15,11 +15,16 @@ public class App {
 		System.out.println("Working days: "+DayOfWeek.getWorkingDays());
 		System.out.println("Weekend days: "+DayOfWeek.getWeekendDays());
 
+		DayOfWeek[] days = DayOfWeek.values();
+		for (DayOfWeek day:days) {
+			System.out.println(day.getPolishName());
+		}
+		
 		do {
 			try {
 				String polishName = askForName();
-				DayOfWeek myDay = DayOfWeek.getByPolishName(polishName);
-				System.out.println("Day " + myDay + " is " + (myDay.isWeekendDay() ? "weekend" : "working") + " day");
+				DayOfWeek day = DayOfWeek.getByPolishName(polishName);
+				System.out.println("Day " + day + " is " + (day.isWeekendDay() ? "weekend" : "working") + " day");
 			} catch (NullPointerException e) {
 				System.out.println("Unknown day's name");
 			}

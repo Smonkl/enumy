@@ -2,7 +2,7 @@ package com.itacademy.enumy;
 
 import java.util.Scanner;
 
-public class App {
+public class Enumy {
 	
 	private static String askForName() {
 		System.out.println("Enter polish day's name: ");

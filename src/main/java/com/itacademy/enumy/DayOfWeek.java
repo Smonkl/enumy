@@ -37,7 +37,7 @@ public enum DayOfWeek {
 	}
 
 	public static DayOfWeek getByPolishName(String polishName) {
-		if (StringUtils.isEmpty(polishName)) return null;
+		if (StringUtils.isBlank(polishName)) return null;
 
 		DayOfWeek[] days = DayOfWeek.values();
 		for (DayOfWeek day:days) {

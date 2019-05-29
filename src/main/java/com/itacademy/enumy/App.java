@@ -9,6 +9,7 @@ public class App {
 		Scanner in = new Scanner(System.in);
 		return in.nextLine();
 	}
+	
 
 	public static void main(String[] args) {
 		System.out.println("Working days: "+DayOfWeek.getWorkingDays());

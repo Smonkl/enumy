@@ -89,9 +89,9 @@ public enum DayOfWeek {
 	 * @since 1.0
 	 */
 	public static DayOfWeek getByPolishName(String polishName) {
-		if (StringUtils.isBlank(polishName))
+		if (StringUtils.isBlank(polishName)) {
 			return null;
-
+		}
 		DayOfWeek[] days = DayOfWeek.values();
 		for (DayOfWeek day : days) {
 			if (day.polishName.equalsIgnoreCase(polishName))

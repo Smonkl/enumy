@@ -22,6 +22,9 @@ public class Enumy {
 		do {
 			try {
 				String polishName = askForName();
+				if ("exit".equalsIgnoreCase(polishName)) {
+					break;
+				}
 				DayOfWeek day = DayOfWeek.getByPolishName(polishName);
 				System.out.println("Day " + day + " is " + (day.isWeekendDay() ? "weekend" : "working") + " day");
 			} catch (NullPointerException e) {
